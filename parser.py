@@ -3,6 +3,7 @@ import requests
 import logging
 import os
 import sys
+from collections import OrderedDict
 
 stdoutOrigin=sys.stdout 
 sys.stdout = open("parser2.txt", "w")
@@ -17,3 +18,9 @@ for link in soup.find_all('a'):
  
 sys.stdout.close()
 sys.stdout=stdoutOrigin
+
+filename = r'parser2.txt'
+with open(filename, encoding='utf-8') as file:
+    uniq = OrderedDict.fromkeys(file)
+with open(filename, 'w', encoding='utf-8') as file:
+    file.writelines(uniq)
