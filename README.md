@@ -3,7 +3,7 @@ Parsing site with python and BS4 and send to Telegram bot via aiogram
 
 ## Welcome to python_parser_bs4-to-bot_aiogram
 
-Это скрипт написанный для компании Самотлор, в свободное от работы время. 
+Это скрипт написанный для компании ТК Самотлор. 
 
 ```markdown
 Особо горжусь этой функцией 
@@ -26,7 +26,7 @@ def parse():
             try: new_news.append(news_item.text)
             except Exception: parse()
 
-[Link](url) and ![Image](src)
+
 ```
 
 
