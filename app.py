@@ -22,7 +22,7 @@ def parse():
     new_news = []
     news = []
     news_item = []
-    i = random.randint(0,31)
+    i = random.randint(18,52)
     global url
     url = 'http://samotlor.tv' + array[i]
     print(url)
