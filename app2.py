@@ -9,7 +9,7 @@ from aiogram.dispatcher.filters import Text
 with open("parser2.txt") as file:
     array = [row.strip() for row in file]
 
-API_TOKEN = '1666903357:AAEhDQ9L04D6NCr6qwhKyss1zy69NZvTbr0'
+API_TOKEN = '00000'
 
 logging.basicConfig(level=logging.INFO)
 
@@ -25,7 +25,6 @@ def urlTake(site):
 
 
 def parse(url):
-    print(url)
     new_news = []
     news = []
     news_item = []
