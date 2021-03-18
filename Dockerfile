@@ -8,6 +8,7 @@ RUN pip install -r requirements.txt
 RUN pip install requests 
 RUN pip install emoji --upgrade
 CMD [ "python3", "parser.py"]
+RUN sleep 2
 CMD [ "python3", "app2.py"]
 
 
