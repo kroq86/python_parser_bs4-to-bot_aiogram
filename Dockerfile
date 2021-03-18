@@ -6,6 +6,7 @@ COPY parser.py parser.py
 CMD ["apt","install","python3-pip"]
 RUN pip install -r requirements.txt
 RUN pip install requests 
+RUN pip install emoji --upgrade
 CMD [ "python3", "parser.py"]
 CMD [ "python3", "app2.py"]
 
